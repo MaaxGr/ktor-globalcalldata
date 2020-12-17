@@ -1,9 +1,13 @@
 plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.4.21'
+
 }
+apply plugin: 'kotlin'
+apply plugin: 'application'
 
 group 'de.maaxgr.ktor.globalcalldata'
 version '1.0'
+mainClassName = "de.maaxgr.ktor.globalcalldata.MainKt"
 
 repositories {
     mavenLocal()
