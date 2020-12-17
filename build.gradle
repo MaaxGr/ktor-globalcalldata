@@ -8,8 +8,8 @@ apply plugin: 'maven'
 
 
 group = 'com.github.MaaxGr'
-version '1.0.0'
-mainClassName = "de.maaxgr.ktor.globalcalldata.MainKt"
+version = '1.0.2'
+mainClassName = "com.github.maaxgr.ktor.globalcalldata.MainKt"
 
 repositories {
     mavenLocal()
@@ -19,10 +19,15 @@ repositories {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib"
-    compile "io.ktor:ktor-server-netty:$ktor_version"
+    implementation "io.ktor:ktor-server-netty:$ktor_version"
 }
 
 jar {
+    manifest {
+        attributes(
+                'Main-Class': mainClassName
+        )
+    }
     from {
         configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
     }

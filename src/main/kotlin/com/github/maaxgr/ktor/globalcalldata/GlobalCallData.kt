@@ -1,6 +1,6 @@
 @file:Suppress("TYPE_INFERENCE_ONLY_INPUT_TYPES_WARNING")
 
-package de.maaxgr.ktor.globalcalldata
+package com.github.maaxgr.ktor.globalcalldata
 
 import io.ktor.application.*
 import io.ktor.response.*

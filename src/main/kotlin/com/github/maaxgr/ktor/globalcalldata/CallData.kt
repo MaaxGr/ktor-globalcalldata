@@ -1,4 +1,4 @@
-package de.maaxgr.ktor.globalcalldata
+package com.github.maaxgr.ktor.globalcalldata
 
 import io.ktor.application.*
 import kotlin.coroutines.CoroutineContext

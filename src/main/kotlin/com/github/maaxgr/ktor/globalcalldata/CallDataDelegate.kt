@@ -1,4 +1,4 @@
-package de.maaxgr.ktor.globalcalldata
+package com.github.maaxgr.ktor.globalcalldata
 
 import kotlin.coroutines.CoroutineContext
 import kotlin.reflect.KProperty

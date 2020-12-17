@@ -1,4 +1,4 @@
-package de.maaxgr.ktor.globalcalldata
+package com.github.maaxgr.ktor.globalcalldata
 
 import java.util.concurrent.ConcurrentHashMap
 import kotlin.coroutines.CoroutineContext
